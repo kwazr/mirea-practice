@@ -29,6 +29,4 @@ public class Ball {
     public String toString(){
         return this.color+", radius "+this.rad;
     }
-
-
 }

@@ -1,8 +1,8 @@
 package ru.mirea.practice3.task2;
 
 public class MovableCircle implements Movable{
-    private int radius;
-    private MovablePoint center = new MovablePoint(0,0,0,0);
+    private final int radius;
+    private final MovablePoint center = new MovablePoint(0,0,0,0);
 
     @Override
     public String toString() {

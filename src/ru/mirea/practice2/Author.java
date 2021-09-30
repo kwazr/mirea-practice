@@ -1,9 +1,9 @@
 package ru.mirea.practice2;
 
 public class Author {
-    private String name;
+    private final String name;
     private String email;
-    private char gender;
+    private final char gender;
 
     public Author(String name, char gender, String email) {
         this.name = name;

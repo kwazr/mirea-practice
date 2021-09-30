@@ -1,8 +1,8 @@
 package ru.mirea.practice3.task2;
 
 public class MovableRectangle implements Movable{
-    private MovablePoint topLeft = new MovablePoint(0,0,0,0);
-    private MovablePoint bottomRight = new MovablePoint(0,0,0,0);
+    private final MovablePoint topLeft = new MovablePoint(0,0,0,0);
+    private final MovablePoint bottomRight = new MovablePoint(0,0,0,0);
 
     public MovableRectangle(int x1, int y1, int x2, int y2, int xSpeed, int ySpeed) {
         topLeft.y = y1;
@@ -55,8 +55,6 @@ public class MovableRectangle implements Movable{
         }
     }
     public boolean checkPointsSpeed() {
-        if (topLeft.xSpeed != bottomRight.xSpeed || topLeft.ySpeed != bottomRight.ySpeed) {
-            return false;
-        } else return true;
+        return topLeft.xSpeed == bottomRight.xSpeed && topLeft.ySpeed == bottomRight.ySpeed;
     }
 }

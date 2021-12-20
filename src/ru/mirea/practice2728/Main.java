@@ -25,7 +25,7 @@ public class Main
             thread3.join();
         }catch(InterruptedException e){}
 
-        System.out.println("Duration: " + (System.currentTimeMillis()-start));
+        System.out.println("Длительность: " + (System.currentTimeMillis()-start));
         System.out.println("Количество ядер процессора: " + Runtime.getRuntime().availableProcessors());
     }
 }
